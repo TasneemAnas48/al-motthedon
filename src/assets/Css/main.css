@@ -1,0 +1,102 @@
+:root {
+    --primary-base: #e6ca69;
+    --secondary-base: #111111;
+}
+@font-face {
+    font-family: "Marcellus-Regular";
+    src:
+        local("Marcellus-Regular"),
+        url(@/assets/font/Marcellus-Regular.ttf) format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "RobotoFlex-Regular";
+    src:
+        local("RobotoFlex-Regular"),
+        url(@/assets/font/RobotoFlex-Regular.ttf) format("truetype");
+    font-display: swap;
+}
+
+.card {
+    background-color: var(--secondary-base) !important;
+    /* margin: 0px !important; */
+    border-radius: 0px !important;
+    border: none !important;
+}
+.card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px !important;
+}
+.card .card-text {
+    color: #fff;
+    margin-top: 25px;
+    font-size: 18px;
+    text-align: center;
+    font-family: "RobotoFlex-Regular" !important;
+}
+.card .card-subtitle {
+    color: var(--primary-base) !important;
+    text-align: center;
+    font-family: "RobotoFlex-Regular" !important;
+    margin-bottom: 25px;
+}
+.card .card-img {
+    border-radius: 0px !important;
+}
+.main-btn {
+    background-color: var(--secondary-base) !important;
+    color: #fff !important;
+    border: 1px solid var(--primary-base) !important;
+    border-radius: 0px !important;
+    font-family: "RobotoFlex-Regular" !important;
+    transition: all 0.3s ease-in;
+}
+.small-btn{
+    width: 200px;
+    font-size: 14px !important;
+}
+.xs-btn{
+    width: 65px;
+    font-size: 14px !important;
+}
+.big-btn{
+    width: 250px;
+    font-size: 16px !important;
+}
+.main-btn:hover {
+    background-color: var(--primary-base) !important;
+    color: var(--secondary-base) !important;
+    transition: all 0.3s ease-in;
+}
+.no-internet-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ql-toolbar.ql-snow {
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+    margin-top: 10px;
+}
+.ql-container {
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+}
+.theme--light.v-data-table > .v-data-table__wrapper > table > tbody > tr:not(:last-child) > td:last-child {
+    padding: 20px !important;
+}
+
+.form-input{    
+    background-color: var(--secondary-base) !important;
+    color: #fff !important;
+    border-radius: 0px !important;
+}
+.form-control:focus {
+    border-color: var(--primary-base) !important;
+    box-shadow: 0 0 10px rgb(255 216 0 / 12%) !important;
+}
